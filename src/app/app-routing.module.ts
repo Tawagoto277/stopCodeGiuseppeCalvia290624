@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { AlbumsListComponent } from './components/albums-list/albums-list.component';
+import { CardsListComponent } from './components/cards-list/cards-list.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,9 @@ const routes: Routes = [
   },
   {
     path : 'albums', component : AlbumsListComponent
+  },
+  {
+    path : 'albums/album/:albumId', component : CardsListComponent
   }
 ];
 

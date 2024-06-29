@@ -1,1 +1,9 @@
-<p>albums-list works!</p>
+<div class="container">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item list-group-item-action" *ngFor="let a of albums">
+      <a [routerLink]="['album', a.id]">
+        {{a.title}}
+      </a>
+    </li>
+  </ul>
+</div>
