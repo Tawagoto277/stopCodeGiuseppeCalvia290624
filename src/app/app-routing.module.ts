@@ -13,7 +13,10 @@ const routes: Routes = [
   },
   {
     path : 'albums/album/:albumId', component : CardsListComponent
-  }
+  },
+  // {
+  //   path : '', redirectTo : '/home', pathMatch : 'full'
+  // }
 ];
 
 @NgModule({

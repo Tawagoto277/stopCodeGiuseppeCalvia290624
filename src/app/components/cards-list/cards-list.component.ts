@@ -16,7 +16,8 @@ export class CardsListComponent implements OnInit{
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('albumId')!;
-    
+
+    // se id richiedesse un numero si puo' aggiungere un + per convertirla in numero (+id)
     this.gs.getAlbumById(id).subscribe(p => {
       this.photos = p;
     })
